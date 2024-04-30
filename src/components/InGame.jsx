@@ -7,7 +7,6 @@ const InGame = () => {
   const [randomNumber] = useState(Math.floor(Math.random() * 10) + 1);
   const [value, setValue] = useState("");
 
-  console.log(randomNumber);
   const handleInputChange = (e) => {
     const sanitizedValue = e.target.value.replace(/[^0-9]/g, "");
     setValue(sanitizedValue);
